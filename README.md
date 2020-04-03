@@ -1,4 +1,14 @@
 # wmap_infrastructure_wordpress
+Dockerを使ったWordPress本番環境運用も見越したDockerComposeです。
+nginxとmysqlの設定ファイルを仮で設置済みです。
+
+## 使い方
+```
+git clone https://github.com/wmapst/wmap_infrastructure_wordpress.git
+cd ./docker-compose
+vi .env # .env.sample.xxxxx を参考にしてください。
+docker-compose up -d
+```
 
 ## 環境
 * OS: CentOS7
