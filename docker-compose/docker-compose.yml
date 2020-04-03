@@ -5,8 +5,6 @@ services:
     image: mysql:5.7
     container_name: wordpress_db
     restart: always
-    ports:
-       - '3306:3306'
     volumes:
        - ./data:/var/lib/mysql
        - ./mysql_conf/my.cnf:/etc/mysql/my.cnf
@@ -25,13 +23,11 @@ services:
     container_name: wordpress_php
     depends_on:
        - wordpress_db
-    ports: 
-       - '9000:9000'
     restart: always
     volumes:
        - ./wordpress:/var/www/html
     environment:
-      WORDPRESS_DB_HOST: wordpress_db:3306
+      WORDPRESS_DB_HOST: wordpress_db
       WORDPRESS_DB_NAME: ${DB_NAME}
       WORDPRESS_DB_USER: ${DB_USER}
       WORDPRESS_DB_PASSWORD: ${DB_USER_PASS}
