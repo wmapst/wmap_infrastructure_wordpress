@@ -1,5 +1,5 @@
 # wmap_infrastructure_wordpress
-Dockerを使ったWordPress本番環境運用も見越したDockerComposeです。
+Dockerを使ったWordPress本番環境運用も見越したDockerComposeです。  
 nginxとmysqlの設定ファイルを仮で設置済みです。
 
 ## 使い方
@@ -38,8 +38,8 @@ HOST_DOMAIN=localhost
 PRODUCTION_STAGE=local
 ```
 ```
-# ステージング環境サンプル
-DB_NAME=wordpress(.env.sample.staging)
+# ステージング環境サンプル(.env.sample.staging)
+DB_NAME=wordpress
 DB_USER=wp_user
 DB_USER_PASS=wp_passwd
 DB_ROOT_PASS=root_passwd
