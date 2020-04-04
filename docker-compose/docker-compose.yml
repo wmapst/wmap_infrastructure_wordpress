@@ -7,7 +7,7 @@ services:
     restart: always
     volumes:
        - ./data:/var/lib/mysql
-       - ./mysql_conf/my.cnf:/etc/mysql/my.cnf
+       - ./mysql-conf/my.cnf:/etc/mysql/my.cnf
     environment:
       MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASS}
       MYSQL_DATABASE: ${DB_NAME}
@@ -26,7 +26,7 @@ services:
     restart: always
     volumes:
        - ./wordpress:/var/www/html
-       - ./php_conf/php.ini-production:/usr/local/etc/php/php.ini-production
+       - ./php-conf/php.ini-production:/usr/local/etc/php/php.ini-production
     environment:
       WORDPRESS_DB_HOST: wordpress_db
       WORDPRESS_DB_NAME: ${DB_NAME}
