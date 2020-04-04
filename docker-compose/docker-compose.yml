@@ -26,7 +26,7 @@ services:
     restart: always
     volumes:
        - ./wordpress:/var/www/html
-       - ./php-conf/php.ini-production:/usr/local/etc/php/php.ini-production
+       - ./php-conf/php.ini:/usr/local/etc/php/php.ini
     environment:
       WORDPRESS_DB_HOST: wordpress_db
       WORDPRESS_DB_NAME: ${DB_NAME}
