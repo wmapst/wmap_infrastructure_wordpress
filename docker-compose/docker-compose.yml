@@ -27,6 +27,7 @@ services:
     volumes:
        - ./wordpress:/var/www/html
        - ./php-conf/php.ini:/usr/local/etc/php/php.ini
+       - ./php-conf/www.conf:/usr/local/etc/php-fpm.d/www.conf
     environment:
       WORDPRESS_DB_HOST: wordpress_db
       WORDPRESS_DB_NAME: ${DB_NAME}
