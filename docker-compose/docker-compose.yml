@@ -55,7 +55,7 @@ services:
         ipv4_address: '172.18.0.4'
 
   https-portal:
-    image: steveltn/https-portal:1
+    image: steveltn/https-portal:latest
     container_name: https-portal
     depends_on:
        - wordpress_web
