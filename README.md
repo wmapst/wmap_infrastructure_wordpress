@@ -3,10 +3,11 @@ Dockerを使ったWordPress本番環境運用も見越したDockerComposeです�
 nginxとmysqlの設定ファイルを仮で設置済みです。
 
 ## Blog
-docker composeでSSL-WordPress 本番環境を構築
-https://www.wmapst.net/programming/20200403-docker-compose-ssl-wordpress-production-env/
-https-portalでwww無しからwww有りへのドメインリダイレクト設定[Docker-Compose]
-https://www.wmapst.net/programming/20200429-https-portal-redirect-setting/
+docker composeでSSL-WordPress 本番環境を構築  
+https://www.wmapst.net/programming/20200403-docker-compose-ssl-wordpress-production-env/  
+  
+https-portalでwww無しからwww有りへのドメインリダイレクト設定[Docker-Compose]  
+https://www.wmapst.net/programming/20200429-https-portal-redirect-setting/  
 
 ## 使い方
 ```
