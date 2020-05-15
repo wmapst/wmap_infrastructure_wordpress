@@ -2,6 +2,12 @@
 Dockerを使ったWordPress本番環境運用も見越したDockerComposeです。  
 nginxとmysqlの設定ファイルを仮で設置済みです。
 
+## Blog
+docker composeでSSL-WordPress 本番環境を構築
+https://www.wmapst.net/programming/20200403-docker-compose-ssl-wordpress-production-env/
+https-portalでwww無しからwww有りへのドメインリダイレクト設定[Docker-Compose]
+https://www.wmapst.net/programming/20200429-https-portal-redirect-setting/
+
 ## 使い方
 ```
 git clone https://github.com/wmapst/wmap_infrastructure_wordpress.git
@@ -14,13 +20,6 @@ docker-compose up -d
 * OS: CentOS7
 * Docker: 19.03.7
 * Docker Compose: 1.22.0
-
-## 追加でやりたいこと
-* DB設定の調整 - とりあえずmy.cnfを追加済み
-* セキュリティ面の確認
-
-## 課題
-* dockerとfirewalldの競合問題に対処する必要がある。要調査。
 
 ## envファイル
 このdocker-composeファイルを利用する場合、以下のファイルが必要になります。  
