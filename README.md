@@ -17,11 +17,6 @@ vi .env # .env.sample.xxxxx を参考にしてください。
 docker-compose up -d
 ```
 
-## 環境
-* OS: CentOS7
-* Docker: 19.03.7
-* Docker Compose: 1.22.0
-
 ## envファイル
 このdocker-composeファイルを利用する場合、以下のファイルが必要になります。  
 docker-compose.ymlファイルと同階層に設置してください。  
